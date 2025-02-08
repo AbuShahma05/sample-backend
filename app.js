@@ -31,4 +31,8 @@ mongoose
     console.error("Database connection error:", err);
   });
 
+  app.get("/", (req, res) => {
+    res.send("Backend is running!");
+  });
+
 export default app; // Optional, useful for testing
